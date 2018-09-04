@@ -21,7 +21,7 @@ class Product extends React.Component {
 
 
 Order.propTypes = {
-  cone: PropTypes.bool,
+  name: PropTypes.string.isRequired,
   size: PropTypes.string,
  PropTypes.arrayOf(PropTypes.string).isRequired, 
   orderInfo: PropTypes.shape({
