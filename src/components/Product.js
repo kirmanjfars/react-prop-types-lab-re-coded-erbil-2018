@@ -22,8 +22,8 @@ class Product extends React.Component {
 
 Order.propTypes = {
   name: PropTypes.string.isRequired,
-  size: PropTypes.string,
- PropTypes.arrayOf(PropTypes.string).isRequired, 
+  product: PropTypes.string,
+  hasWatermark: PropTypes.bool.isRequired, 
   orderInfo: PropTypes.shape({
     customerName: PropTypes.string.isRequired,
     orderedAt: PropTypes.number.isRequired 
@@ -31,7 +31,7 @@ Order.propTypes = {
 };
 
 Order.defaultProps = {
-  cone: true,
+  hasWatermark: false,
   size: 'regular'
 };
  
