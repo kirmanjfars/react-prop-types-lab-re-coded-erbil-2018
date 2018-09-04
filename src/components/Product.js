@@ -22,7 +22,7 @@ Order.propTypes = {
   
   color: PropTypes.oneOf(['white', 
   'eggshell-white', 
-    'salmon']),
+    'salmon']).isRequired,
   orderInfo: PropTypes.shape({
     customerName: PropTypes.string.isRequired,
     orderedAt: PropTypes.number.isRequired 
