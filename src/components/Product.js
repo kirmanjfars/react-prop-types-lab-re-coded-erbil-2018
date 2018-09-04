@@ -21,7 +21,8 @@ Order.propTypes = {
   hasWatermark: PropTypes.bool, 
   
   color: PropTypes.oneOf(['white', 
-  ]),
+  'eggshell-white', 
+    'salmon']),
   orderInfo: PropTypes.shape({
     customerName: PropTypes.string.isRequired,
     orderedAt: PropTypes.number.isRequired 
