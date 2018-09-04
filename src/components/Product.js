@@ -24,7 +24,7 @@ Order.propTypes = {
   name: PropTypes.string.isRequired,
   product: PropTypes.string,
   hasWatermark: PropTypes.bool.isRequired, 
-  PropTypes.arrayOf(PropTypes.string),
+  PropTypes.arrayOf(PropTypes.string).isRequired,
   orderInfo: PropTypes.shape({
     customerName: PropTypes.string.isRequired,
     orderedAt: PropTypes.number.isRequired 
