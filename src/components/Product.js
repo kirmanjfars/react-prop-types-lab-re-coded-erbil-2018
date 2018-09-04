@@ -22,16 +22,17 @@ Order.propTypes = {
   
   color: PropTypes.oneOf(['white', 
   'eggshell-white', 
-    'salmon']).isRequired,
-  orderInfo: PropTypes.shape({
-    customerName: PropTypes.string.isRequired,
-    orderedAt: PropTypes.number.isRequired 
-  }).isRequired
-};
+    'salmon']).isRequired, 
+      weight: (props, propName) => {
+    const weight = props[propName];
 
-Order.defaultProps = {
-  hasWatermark: false
-};
+    
+
+    const isValidWeight = weight > 80 && weight < 300;
+
+    if (!isValidWeight) {
+      return new Error('The `weight` prop should range between 80 and 300.');
+    }
  
 
 
