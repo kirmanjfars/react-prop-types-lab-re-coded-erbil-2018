@@ -32,8 +32,7 @@ Order.propTypes = {
 };
 
 Order.defaultProps = {
-  hasWatermark: false,
-  size: 'regular'
+  hasWatermark: false
 };
  
 
