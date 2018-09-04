@@ -18,7 +18,7 @@ class Product extends React.Component {
 Order.propTypes = {
   name: PropTypes.string.isRequired,
   product: PropTypes.string,
-  hasWatermark: PropTypes.bool.isRequired, 
+  hasWatermark: PropTypes.bool, 
   
   PropTypes.arrayOf(PropTypes.string).isRequired,
   orderInfo: PropTypes.shape({
