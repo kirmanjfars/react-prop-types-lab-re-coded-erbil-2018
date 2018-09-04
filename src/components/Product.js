@@ -20,7 +20,8 @@ Order.propTypes = {
   product: PropTypes.string,
   hasWatermark: PropTypes.bool, 
   
-  PropTypes.arrayOf(PropTypes.string).isRequired,
+  color: PropTypes.oneOf(['white', 
+  ]),
   orderInfo: PropTypes.shape({
     customerName: PropTypes.string.isRequired,
     orderedAt: PropTypes.number.isRequired 
